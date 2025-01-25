@@ -82,13 +82,11 @@ body {
   width: 490px;
   height: 50px;
   gap: 50px;
-  opacity: 0px;
 }
 
 .feature-item p {
   font-family: Gilroy;
   font-size: 18px;
-  font-weight: 300px;
   line-height: 25.2px;
   text-align: left;
   text-underline-position: from-font;
@@ -139,14 +137,11 @@ body {
   width: 590px;
   height: 490px;
   gap: 0px;
-  opacity: 0px;
 }
 
 .info-container {
-  width: Fixed (486px)px;
+  width: 486px;
   height: 466px;
-  opacity: 0px;
-
 }
 .hero-title {
   font-size: 256px;
@@ -158,8 +153,6 @@ body {
   top: 102px;
   left: 122px;
   gap: 0px;
-  opacity: 0px;
-
 }
 
 .hero-subtitle {
@@ -170,9 +163,7 @@ body {
   top: 386px;
   left: 110px;
   gap: 0px;
-  opacity: 0px;
   font-size: 80px;
-
 }
 
 .features {
@@ -183,9 +174,7 @@ body {
   top: 536px;
   left: 120px;
   gap: 220px;
-  opacity: 0px;
   margin-top: 50px;
-
 }
 
 .feature {
@@ -194,8 +183,6 @@ body {
   width: 387px;
   height: 130px;
   gap: 30px;
-  opacity: 0px;
-
 }
 
 .feature-text {
@@ -225,8 +212,6 @@ body {
   width: 82px;
   height: 17px;
   gap: 0px;
-  opacity: 0px;
-
 }
 
 .btn:hover,
@@ -1092,3 +1077,4 @@ visually-hidden {
 @font-face {
   font-family: 'medium'; /* Название шрифта, которое вы будете использовать в CSS */
   src: url('fonts/Oceanic-Medium.otf') format('otf');
+}
