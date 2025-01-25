@@ -11,6 +11,10 @@
   box-sizing: border-box;
 }
 
+.med {
+  font-family: medium;
+}
+
 body {
   font-family: system-ui, -apple-system, sans-serif;
   background-color: var(--bg-dark);
@@ -73,31 +77,125 @@ body {
   margin-top: 1.25rem;
   text-align: left;
 }
+.feature-item {
+  display: flex;
+  width: 490px;
+  height: 50px;
+  gap: 50px;
+  opacity: 0px;
+}
 
+.feature-item p {
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 300px;
+  line-height: 25.2px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+}
+
+.advantages-content {
+  display: flex;
+  width: 1200px;
+}
+
+.feature a {
+  text-align: center;
+}
+
+.advantages-list {
+  display: flex;
+  margin-right: 20px; /* Отступ справа для расстояния до изображения */
+}
+
+.advantage-item {
+  margin-bottom: 20px; /* Отступ между элементами */
+}
+
+.advantage-image {
+  display: flex;
+  justify-content: center; /* Центрируем изображение */
+  align-items: center; /* Вертикальное выравнивание для изображения */
+  margin: 0 20px; /* Задаем отступы для изображения */
+}
+
+.delivery-photo {
+  max-width: 100%; /* Ограничение ширины изображения */
+  height: auto; /* Высота будет пропорциональна ширине */
+}
+.booking-container {
+  width: 1200px;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+}
+
+.map-container {
+  width: 590px;
+  height: 490px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.info-container {
+  width: Fixed (486px)px;
+  height: 466px;
+  opacity: 0px;
+
+}
 .hero-title {
-  font-size: clamp(4rem, 16vw, 16rem);
+  font-size: 256px;
   text-transform: uppercase;
   color: var(--bg-secondary);
   line-height: 1;
+  width: 1197px;
+  height: 256px;
+  top: 102px;
+  left: 122px;
+  gap: 0px;
+  opacity: 0px;
+
 }
 
 .hero-subtitle {
   display: flex;
   justify-content: space-between;
-  font-size: clamp(2rem, 5vw, 4.5rem);
-  text-transform: uppercase;
-  margin-top: 1.75rem;
+  width: 1210px;
+  height: 100px;
+  top: 386px;
+  left: 110px;
+  gap: 0px;
+  opacity: 0px;
+  font-size: 80px;
+
 }
 
 .features {
   display: flex;
   justify-content: space-between;
-  margin-top: 3rem;
-  gap: 2.5rem;
+  width: 1200px;
+  height: 189px;
+  top: 536px;
+  left: 120px;
+  gap: 220px;
+  opacity: 0px;
+  margin-top: 50px;
+
 }
 
 .feature {
-  flex: 1;
+  display: grid;
+  justify-content: center;
+  width: 387px;
+  height: 130px;
+  gap: 30px;
+  opacity: 0px;
+
 }
 
 .feature-text {
@@ -105,7 +203,7 @@ body {
   margin-bottom: 2.5rem;
 }
 
-.btn {
+.btn, .submit-button {
   display: inline-block;
   padding: 1.25rem 2.5rem;
   background-color: var(--primary-color);
@@ -116,6 +214,19 @@ body {
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  width: 285px;
+}
+
+.submit-button {
+  width: 590px;
+}
+
+.restaurant-caption {
+  width: 82px;
+  height: 17px;
+  gap: 0px;
+  opacity: 0px;
+
 }
 
 .btn:hover,
@@ -263,12 +374,11 @@ body {
   fill: var(--text-color);
 }
 
-.restaurant-section {
+.restaurant-section, .dvr-section, .bk-section {
   display: flex;
   align-items: center;
-  gap: 40px 120px;
+  gap: 0px 120px;
   color: var(--text, #e8edff);
-  justify-content: start;
   flex-wrap: wrap;
   margin: 195px 0 0 10px;
   font: 500 56px/1 Oceanic TRIAL, sans-serif;
@@ -276,10 +386,10 @@ body {
 
 .restaurant-caption {
   align-self: stretch;
-  flex-grow: 1;
-  width: 66px;
+  justify-content: start;
+  width: 85px;
   margin: auto 0;
-  font: 12px/1.4 Gilroy, sans-serif;
+  font-size: 12px;
 }
 
 .history-text {
@@ -978,3 +1088,7 @@ visually-hidden {
     max-width: 100%;
   }
 }
+
+@font-face {
+  font-family: 'medium'; /* Название шрифта, которое вы будете использовать в CSS */
+  src: url('fonts/Oceanic-Medium.otf') format('otf');
